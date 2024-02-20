@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <!-- header section start -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html">
+                <div class="logo">
+                    <h1>Countries</h1>
+                </div>
+            </a>
+            <div class="mode">
+                <i class="fa-regular fa-moon"></i>
+                <h1>Dark mode</h1>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- filter section start -->
+    <section class="filter">
+        <div class="container">
+            <form action="#" class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="search" placeholder="Seacrh countries">
+            </form>
+            <div class="fil">
+                <span>Filter by Region</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                <ul class="choosen">
+                    <li>All</li>
+                    <li>Africa</li>
+                    <li>America</li>
+                    <li>Europe</li>
+                    <li>Asia</li>
+                    <li>Oceania</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- filter section end -->
+
+    <!-- countries section start -->
+    <section class="countries"></section>
+    <!-- countries section end -->
+
+    <!-- loader -->
+    <section class="loader hidden">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </section>
+</body>
+</html>
